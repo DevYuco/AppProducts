@@ -1,0 +1,12 @@
+<div class="card shadow">
+  <div class="d-flex justify-content-center mt-3">
+    <a [routerLink]="['/product', myProduct._id]" class="d-block w-100 text-center">
+      <img [src]="myProduct.image" [alt]="myProduct._id" class="shadow rounded-2"
+        style="width: 100%; max-width: 400px; aspect-ratio: 1/1; object-fit: cover;">
+    </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title fw-semibold small">{{myProduct.name}}</h5>
+    <h6 class=" text-secondary">{{myProduct.price}}€</h6>
+  </div>
+</div>
