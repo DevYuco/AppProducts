@@ -14,6 +14,6 @@ export class AppComponent {
   private router = inject(Router);
 
   detectViewActive(): boolean {
-    return this.router.url.includes('/product');
+    return this.router.url.includes('/home');
   }
 }
